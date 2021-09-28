@@ -14,3 +14,7 @@ h3, h4 {
     text-align: center;
     font-weight: normal;
 }
+
+ul {
+    list-style-type: none;
+}
