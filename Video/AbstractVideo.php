@@ -3,7 +3,14 @@
 
 abstract class AbstractVideo implements VideoInterface
 {
-    protected $name;
+    private $name;
+    private $source;
+
+    public function __construct(string $name, string $source)
+    {
+        $this->name = $name;
+        $this->source = $source;
+    }
 
     /**
      * @return string
@@ -13,11 +20,13 @@ abstract class AbstractVideo implements VideoInterface
         return $this->name;
     }
 
-    public function __construct(string $name)
+    /**
+     * @return string
+     */
+    public function getSource(): string
     {
-        $this->name = $name;
+        return $this->source;
     }
 
-    abstract function getHTMLOutput();
-
+    abstract function getHTMLOutput(): string;
 }

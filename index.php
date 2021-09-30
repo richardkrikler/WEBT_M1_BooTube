@@ -1,7 +1,9 @@
 <?php
 
-require_once "Template/Template.php";
+require_once 'Template/Template.php';
 //  Für User Story 4 auskommentieren --> require_once 'Video/Youtube.php';
+
+
 
 $main = '<ul>';
 for ($i = 0; $i < 20; $i++) {
