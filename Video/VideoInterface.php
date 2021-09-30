@@ -1,8 +1,9 @@
 <?php
 
+
 interface VideoInterface
 {
-    function getName();
-    function getSource();
-    function getHTMLOutput();
+    public function getName();
+    public function getSource(): string;
+    public function getHTMLOutput();
 }
