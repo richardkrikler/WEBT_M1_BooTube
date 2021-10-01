@@ -1,22 +1,11 @@
 <?php
+
 namespace WEBT_M1_BooTube\Video;
 
-use VideoInterface;
-
-require 'AbstractVideo.php';
+require_once 'AbstractVideo.php';
 
 class Youtube extends AbstractVideo
 {
-    private $source;
-
-    /**
-     * @return string
-     */
-    public function getSource(): string
-    {
-        return $this->source;
-    }
-
     /**
      * @param string $name Name of the video
      * @param string $source Source URL of the video
@@ -24,7 +13,6 @@ class Youtube extends AbstractVideo
     public function __construct(string $name, string $source)
     {
         parent::__construct($name, $source);
-        $this->source = $source;
     }
 
     public function getHTMLOutput(): string
