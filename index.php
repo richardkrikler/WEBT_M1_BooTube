@@ -1,29 +1,21 @@
 <?php
 namespace WEBT_M1_BooTube;
+
 use WEBT_M1_BooTube\Video\Youtube;
 use WEBT_M1_BooTube\Template\Template;
 
-require_once 'Template/Template.php';
+require_once "Template/Template.php";
 require_once 'Video/Youtube.php';
 
-
+$videos[] = new Youtube("This Fire Inside", "https://www.youtube.com/watch?v=gyciPq_lD9U");
+$videos[] = new Youtube("Champion", "https://www.youtube.com/watch?v=4ePUkps416s");
+$videos[] = new Youtube("Radioactive", "https://www.youtube.com/watch?v=ktvTqknDobU");
+$videos[] = new Youtube("Blaues Licht", "https://www.youtube.com/watch?v=0NL8H1IAHVc");
+$videos[] = new Youtube("Wenn du mich siehst", "https://www.youtube.com/watch?v=mbrsAiSJjj8");
 
 $main = '<ul>';
-for ($i = 0; $i < 20; $i++) {
-    $main .= '<li>';
-    $main .= '<h3>Dark Phoenix Song | This Fire Inside</h3>';
-    $main .= '<h4>Source: YouTube</h4>';
-    $main .= <<<VIDEOCODE
-            <iframe
-                width="560" height="315"
-                src="https://www.youtube.com/embed/gyciPq_lD9U"
-                title="Dark Phoenix Song | This Fire Inside"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-VIDEOCODE;
-    $main .= '</li>';
+foreach ($videos as $video) {
+    $main .= '</li>Title: '.$video->getName().' '.$video->getHTMLOutput().'</li>';
 }
 $main .= '</ul>';
 
