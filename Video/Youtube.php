@@ -1,8 +1,10 @@
 <?php
+namespace WEBT_M1_BooTube\Video;
 
 require_once 'VideoInterface.php';
+require_once 'AbstractVideo.php';
 
-class Youtube extends AbstractVideo
+class Youtube extends AbstractVideo implements VideoInterface
 {
     /**
      * @param string $name Name of the video
@@ -15,8 +17,15 @@ class Youtube extends AbstractVideo
 
     public function getHTMLOutput(): string
     {
+
         return <<<VIDEOCODE
-    <iframe 
+    <iframe
+        width="560" height="315"
+        src="{$this->getSource()}"
+        title="{$this->getName()}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
     </iframe>
 VIDEOCODE;
     }

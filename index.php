@@ -1,7 +1,10 @@
 <?php
+namespace WEBT_M1_BooTube;
+use WEBT_M1_BooTube\Video\Youtube;
+use WEBT_M1_BooTube\Template\Template;
 
 require_once 'Template/Template.php';
-//  Für User Story 4 auskommentieren --> require_once 'Video/Youtube.php';
+require_once 'Video/Youtube.php';
 
 
 
