@@ -16,8 +16,9 @@ body {
 div#page-title {
     background-color: #E0E2DB;
     border-radius: 0 0 15px 15px;
-    padding: 25px 25px 35px 25px;
+    padding: 25px 25px 40px 25px;
     box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
+    margin-bottom: 55px;
 }
 
 div#page-title h1, div#page-title h2 {
@@ -27,6 +28,11 @@ div#page-title h1, div#page-title h2 {
 
 div#page-title h1 {
     margin-bottom: 15px;
+    font-size: 35pt;
+}
+
+div#page-title h2 {
+    font-size: 25pt;
 }
 
 ul {
