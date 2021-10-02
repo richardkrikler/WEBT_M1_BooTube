@@ -14,7 +14,13 @@ $videos[] = new Youtube("Radioactive", "https://www.youtube.com/embed/ktvTqknDob
 $videos[] = new Youtube("Blaues Licht", "https://www.youtube.com/embed/0NL8H1IAHVc");
 $videos[] = new Youtube("Wenn du mich siehst", "https://www.youtube.com/embed/mbrsAiSJjj8");
 
-$main = '<ul>';
+$main = '<div id="page-title">';
+$main .= '<h1>BooTube</h1>';
+$main .= '<h2>The scary video portal.</h2>';
+$main .= '</div>';
+
+
+$main .= '<ul>';
 foreach ($videos as $video) {
     $main .= '<li>';
     $main .= '<h3>' . $video->getName() . '</h3>';
