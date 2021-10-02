@@ -20,7 +20,6 @@ class Youtube extends AbstractVideo
         // https://developers.google.com/youtube/player_parameters#Parameters
         return <<<VIDEOCODE
     <iframe
-        width="560" height="315"
         src="{$this->getSource()}?modestbranding=1"
         title="YouTube: {$this->getName()}"
         frameborder="0"
