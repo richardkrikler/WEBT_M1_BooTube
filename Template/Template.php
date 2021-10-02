@@ -16,6 +16,10 @@ class Template
 </head>
 <body>
 <main>
+<div id="page-title">
+    <h1>BooTube</h1>
+    <h2>The scary video portal.</h2>
+</div>
 TEMPLATE_HEAD;
 
         $template_footer = <<<TEMPLATE_FOOTER
