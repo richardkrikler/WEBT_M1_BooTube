@@ -18,13 +18,9 @@ class LocalVideo extends AbstractVideo
     function getHTMLOutput(): string
     {
         return <<<VIDEOCODE
-    <iframe
-        src="{$this->getSource()}?modestbranding=1"
-        title="YouTube: {$this->getName()}"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+            <video controls width="250">
+                <source src="{}" type="video/webm">
+            </video>
 VIDEOCODE;
     }
 }
