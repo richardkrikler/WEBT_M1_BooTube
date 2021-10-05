@@ -26,6 +26,6 @@ VIDEOCODE;
 
     function getMimeContentType(): string
     {
-        return mime_content_type($this->getSourc());
+        return mime_content_type($this->getSource());
     }
 }

@@ -22,7 +22,14 @@ $videos[] = new Vimeo('CONVERGENCE STATION', 'https://player.vimeo.com/video/608
 $videos[] = new Vimeo('88:88', 'https://player.vimeo.com/video/31963455');
 $videos[] = new Vimeo('Neurosymphony', 'https://player.vimeo.com/video/368065919');
 $videos[] = new Vimeo('Spooky Scary', 'https://player.vimeo.com/video/7251379');
-$videos[] = new LocalVideo('', '');
+$videos[] = new LocalVideo('Title1', 'VideoFiles/local_video_1.mp4');
+$videos[] = new LocalVideo('Title2', 'VideoFiles/local_video_2.mp4');
+$videos[] = new LocalVideo('Title3', 'VideoFiles/local_video_3.mp4');
+$videos[] = new LocalVideo('Title4', 'VideoFiles/local_video_4.mp4');
+$videos[] = new LocalVideo('Title5', 'VideoFiles/local_video_5.mp4');
+
+
+
 
 $main = '<ul>';
 foreach ($videos as $video) {
