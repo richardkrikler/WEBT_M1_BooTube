@@ -2,9 +2,9 @@
 
 interface VideoInterface
 {
-    function getName();
+    function getName(): string;
 
-    function getSource();
+    function getSource(): string;
 
-    function getHTMLOutput();
+    function getHTMLOutput(): string;
 }
