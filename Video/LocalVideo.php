@@ -19,8 +19,13 @@ class LocalVideo extends AbstractVideo
     {
         return <<<VIDEOCODE
             <video controls width="250">
-                <source src="{}" type="video/webm">
+                <source src="{$this->getSource()}" type="{$this->getMimeContentType()}">
             </video>
 VIDEOCODE;
+    }
+
+    function getMimeContentType(): string
+    {
+        return mime_content_type($this->getSourc());
     }
 }
