@@ -1,16 +1,15 @@
 <?php
 
+namespace WEBT_M1_BooTube\Video;
+
+use VideoInterface;
+
+require_once 'VideoInterface.php';
 
 abstract class AbstractVideo implements VideoInterface
 {
     private $name;
     private $source;
-
-    public function __construct(string $name, string $source)
-    {
-        $this->name = $name;
-        $this->source = $source;
-    }
 
     /**
      * @return string
@@ -21,12 +20,16 @@ abstract class AbstractVideo implements VideoInterface
     }
 
     /**
-     * @return string
+     * @return mixed
      */
     public function getSource(): string
     {
         return $this->source;
     }
 
-    abstract function getHTMLOutput(): string;
+    public function __construct(string $name, string $source)
+    {
+        $this->name = $name;
+        $this->source = $source;
+    }
 }

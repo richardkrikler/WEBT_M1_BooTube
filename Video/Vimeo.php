@@ -4,7 +4,7 @@ namespace WEBT_M1_BooTube\Video;
 
 require_once 'AbstractVideo.php';
 
-class Youtube extends AbstractVideo
+class Vimeo extends AbstractVideo
 {
     /**
      * @param string $name Name of the video
@@ -17,15 +17,14 @@ class Youtube extends AbstractVideo
 
     public function getHTMLOutput(): string
     {
-        // https://developers.google.com/youtube/player_parameters#Parameters
         return <<<VIDEOCODE
-    <iframe
-        src="{$this->getSource()}?modestbranding=1"
-        title="YouTube: {$this->getName()}"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+        <iframe
+            src="{$this->getSource()}?title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen></iframe>
 VIDEOCODE;
     }
+
+
 }
