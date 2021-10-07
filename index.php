@@ -29,8 +29,6 @@ $videos[] = new LocalVideo('Dark Night', 'VideoFiles/local_video_4.mp4');
 $videos[] = new LocalVideo('Killer Clown', 'VideoFiles/local_video_5.mp4');
 
 
-
-
 $main = '<ul>';
 foreach ($videos as $video) {
     $main .= '<li>';

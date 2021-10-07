@@ -17,7 +17,7 @@ div#page-title {
     background-color: #E0E2DB;
     border-radius: 0 0 15px 15px;
     padding: 25px 25px 40px 25px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
     margin-bottom: 55px;
 }
 
@@ -44,7 +44,7 @@ li {
     padding: 25px 35px 28px 35px;
     margin: 30px 25px 30px 25px;
     border-radius: 15px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
 }
 
 li h3 {
@@ -65,5 +65,5 @@ iframe, video {
     width: 560px;
     height: 315px;
     border-radius: 15px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
 }
