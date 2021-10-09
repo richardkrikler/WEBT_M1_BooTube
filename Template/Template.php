@@ -19,14 +19,17 @@ class Template
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
 </head>
 <body>
-<main>
-<div id="page-title">
-    <h1>BooTube</h1>
-    <h2>The scary video portal.</h2>
-</div>
+<main class="container">
+<header>
+    <h1 class="display-2 text-center fw-bolder">BooTube</h1>
+    <h2 class="display-6 text-center fw-bolder">The scary video portal.</h2>
+</header>
 TEMPLATE_HEAD;
 
         $template_footer = <<<TEMPLATE_FOOTER
+<footer>
+    <h4 class="text-center">© Jakob Mucherl, Richard Krikler, Hadi Tlais</h4>
+</footer>
 </main>
 </body>
 </html>
