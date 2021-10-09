@@ -1,69 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 * {
-    font-family: 'Oswald', sans-serif;
-    padding: 0;
-    margin: 0;
+    font-family: 'Dancing Script', cursive;
     color: #445753;
 }
 
 body {
-    background: #B8BDB5;
-    display: flex;
-    justify-content: center;
+    background-color: #5F7470;
 }
 
-div#page-title {
-    background-color: #E0E2DB;
-    border-radius: 0 0 15px 15px;
+header {
+    background-color: #D2D4C8;
+    border-radius: 0 0 12px 12px;
     padding: 25px 25px 40px 25px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
-    margin-bottom: 55px;
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 70px;
 }
 
-div#page-title h1, div#page-title h2 {
-    text-align: center;
-    font-weight: normal;
+footer {
+    background-color: #D2D4C8;
+    border-radius: 12px 12px 0 0;
+    padding: 40px 25px 25px 25px;
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
+    margin-top: 70px;
 }
 
-div#page-title h1 {
-    margin-bottom: 15px;
-    font-size: 35pt;
+div#video-list-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
-div#page-title h2 {
-    font-size: 25pt;
+div.video-item {
+    background-color: #D2D4C8;
+    padding: 25px 35px 22px 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    background-color: #E0E2DB;
-    padding: 25px 35px 28px 35px;
-    margin: 30px 25px 30px 25px;
-    border-radius: 15px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
-}
-
-li h3 {
-    text-align: center;
-    font-weight: normal;
-    font-size: 20pt;
+div.video-item h3 {
     margin-top: -10px;
     margin-bottom: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-li a {
-    display: block;
-    text-decoration: none;
-    margin-top: 10px;
+div.video-item a {
+    margin-top: 12px;
+    font-family: sans-serif;
+    color: #445753;
 }
 
-iframe, video {
-    width: 560px;
-    height: 315px;
-    border-radius: 15px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,0.26);
+div.video-item a:hover {
+    color: #5F7470;
+}
+
+div.video-item iframe, div.video-item video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
 }

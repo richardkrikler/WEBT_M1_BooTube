@@ -29,16 +29,14 @@ $videos[] = new LocalVideo('Dark Night', 'VideoFiles/local_video_4.mp4');
 $videos[] = new LocalVideo('Killer Clown', 'VideoFiles/local_video_5.mp4');
 
 
-
-
-$main = '<ul>';
+$main = '<div class="container my-5" id="video-list"><div class="row justify-content-center" id="video-list-row">';
 foreach ($videos as $video) {
-    $main .= '<li>';
-    $main .= '<h3>' . $video->getName() . '</h3>';
-    $main .= $video->getHTMLOutput();
-    $main .= '<a href="' . $video->getSource() . '" target="_blank">' . $video->getSource() . '</a>';
-    $main .= '</li>';
+    $main .= '<div class="video-item col-11 col-sm-5">';
+    $main .= '<h3 class="text-center fw-bold">' . $video->getName() . '</h3>';
+    $main .= '<div class="ratio ratio-16x9">' . $video->getHTMLOutput() . '</div>';
+    $main .= '<a href="' . $video->getSource() . '" target="_blank" class="d-block text-decoration-none text-break">' . $video->getSource() . '</a>';
+    $main .= '</div>';
 }
-$main .= '</ul>';
+$main .= '</div></div>';
 
 echo Template::render($main);

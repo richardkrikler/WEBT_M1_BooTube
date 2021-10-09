@@ -18,7 +18,7 @@ class LocalVideo extends AbstractVideo
     function getHTMLOutput(): string
     {
         return <<<VIDEOCODE
-            <video controls width="250">
+            <video controls>
                 <source src="{$this->getSource()}" type="{$this->getMimeContentType()}">
             </video>
 VIDEOCODE;
