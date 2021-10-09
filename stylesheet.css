@@ -2,77 +2,60 @@
 
 * {
     font-family: 'Dancing Script', cursive;
-    padding: 0;
-    margin: 0;
     color: #445753;
 }
 
 body {
     background-color: #5F7470;
-    display: flex;
-    justify-content: center;
 }
 
-div#page-title {
+header {
     background-color: #D2D4C8;
     border-radius: 0 0 12px 12px;
     padding: 25px 25px 40px 25px;
     box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
-    margin-bottom: 55px;
+    margin-bottom: 70px;
 }
 
-div#page-title h1, div#page-title h2 {
-    text-align: center;
-    font-weight: bolder;
+footer {
+    background-color: #D2D4C8;
+    border-radius: 12px 12px 0 0;
+    padding: 40px 25px 25px 25px;
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
+    margin-top: 70px;
 }
 
-div#page-title h1 {
-    margin-bottom: 15px;
-    font-size: 43pt;
+div#video-list-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
-div#page-title h2 {
-    font-size: 25pt;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
+div.video-item {
     background-color: #D2D4C8;
     padding: 25px 35px 22px 35px;
-    margin: 30px 25px 30px 25px;
     border-radius: 12px;
     box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
 }
 
-li h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20pt;
+div.video-item h3 {
     margin-top: -10px;
     margin-bottom: 15px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
-li a {
-    width: max-content;
-    display: block;
-    text-decoration: none;
+div.video-item a {
     margin-top: 12px;
     font-family: sans-serif;
     color: #445753;
 }
 
-li a:hover {
+div.video-item a:hover {
     color: #5F7470;
 }
 
-iframe, video {
-    width: 560px;
-    height: 315px;
+div.video-item iframe, div.video-item video {
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.26);
 }
