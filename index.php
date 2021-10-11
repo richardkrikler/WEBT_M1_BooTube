@@ -12,11 +12,11 @@ require_once 'Video/Youtube.php';
 require_once 'Video/Vimeo.php';
 require_once 'Video/LocalVideo.php';
 
-$videos[] = new Youtube('This Fire Inside', 'https://www.youtube.com/embed/gyciPq_lD9U');
-$videos[] = new Youtube('Champion', 'https://www.youtube.com/embed/4ePUkps416s');
-$videos[] = new Youtube('Radioactive', 'https://www.youtube.com/embed/ktvTqknDobU');
-$videos[] = new Youtube('Blaues Licht', 'https://www.youtube.com/embed/0NL8H1IAHVc');
-$videos[] = new Youtube('Wenn du mich siehst', 'https://www.youtube.com/embed/mbrsAiSJjj8');
+$videos[] = new Youtube('Scary Movie 1 | Trailer', 'https://www.youtube.com/embed/iQTSHKKpv_E');
+$videos[] = new Youtube('Top 10 Scariest Videos', 'https://www.youtube.com/embed/BvqfCH9bADI');
+$videos[] = new Youtube('GUEST - A Horror Short Film', 'https://www.youtube.com/embed/7-5Upq2hcOA');
+$videos[] = new Youtube('Top 15 Scariest Clown Sightings Videos', 'https://www.youtube.com/embed/Il_KGsw2miI');
+$videos[] = new Youtube('Scary Compilation Volume 31', 'https://www.youtube.com/embed/ZJ8gnfJJJwY');
 $videos[] = new Vimeo('Hearing Tarantino', 'https://player.vimeo.com/video/118431867');
 $videos[] = new Vimeo('CONVERGENCE STATION', 'https://player.vimeo.com/video/608932905');
 $videos[] = new Vimeo('88:88', 'https://player.vimeo.com/video/31963455');
